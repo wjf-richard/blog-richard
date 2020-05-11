@@ -1,10 +1,10 @@
 /*
  * @Date: 2020-05-07 17:28:52
  * @LastEditors: Richard
- * @LastEditTime: 2020-05-09 14:35:28
+ * @LastEditTime: 2020-05-11 15:19:08
  */
-  
-var nav = require('./links/nav.js');
+
+// var nav = require('./links/nav.js');
 
 module.exports = {
 	base: '/blog-richard/',
@@ -17,7 +17,16 @@ module.exports = {
 		repo: 'https://github.com/wjf-richard/blog-richard',
 		// 自定义仓库链接文字。
 		repoLabel: 'My GitHub',
-		nav,
+		nav: [
+			{
+				text: 'Home',
+				link: '/',
+			},
+			{
+				text: 'FirstBlog',
+				link: '/blog/FirstBlog.md',
+			}
+		],
 		// 侧边栏-----
 		sidebar: [
 			['/', '首页'],
